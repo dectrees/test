@@ -1,5 +1,5 @@
 # Use an official OpenJDK 11 runtime as a base image
-FROM anapsix/alpine-java
+FROM eclipse-temurin:11
 
 # Set the working directory
 WORKDIR /app
