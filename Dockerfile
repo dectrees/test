@@ -1,5 +1,5 @@
 # Use an official OpenJDK 11 runtime as a base image
-FROM openjdk:11
+FROM anapsix/alpine-java
 
 # Set the working directory
 WORKDIR /app
