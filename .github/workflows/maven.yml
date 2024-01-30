@@ -13,7 +13,7 @@ on:
     tags:
       - '*'
 env:
-  AWS_REGION: eu-east-2
+  AWS_REGION: eu-west-2
   ECR_REPOSITORY: graphviz-test
   ECS_SERVICE: graphviz
   ECS_CLUSTER: graphviz
