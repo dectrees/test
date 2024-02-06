@@ -43,6 +43,11 @@ jobs:
         
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+      
+    - uses: actions/upload-artifact@v1
+      with:
+        name: Package
+        path: ${{ github.workspace }}/target/*.jar
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@0e613a0980cbf65ed5b322eb7a1e075d28913a83
